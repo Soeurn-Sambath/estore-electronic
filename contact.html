@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTORE</title>
+    <link rel="icon" href="images/estore.PNG">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .nav-link:nth-child(1) {
+        background-color: transparent;
+        color: #4f4a4a;
+      }
+      .nav-link:nth-child(10) {
+        background-color: var(--secondary);
+        color: white;
+      }
+      .nav-link .white-color1:nth-child(10) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span>E<span class="accent">STORE</span></span>
+          </a>
+          <!-- Search bar -->
+          <div class="search-wrapper">
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search iPhone, ROG Laptop, i9 CPU, OLED Monitor..."
+              />
+            </div>
+          </div>
+          <!-- Wishlist & Cart -->
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-text">Wishlist</span>
+              <span class="badge-count">2</span>
+            </button>
+            <a href="cart.html" class="action-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="action-text">Cart</span>
+              <span class="badge-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- List 10 pages -->
+    <nav class="header-nav-list">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="smartphones.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a>
+          </li>
+          <li class="nav-link">
+            <a href="pc_hartware.html"
+              ><i class="fa-solid fa-microchip"></i>PC Hartware</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="audio.html"
+              ><i class="fa-regular fa-headphones"></i>Audio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="smartwatch.html"
+              ><i class="fa-solid fa-stopwatch"></i>Smartwatches</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="checkout.html"
+              ><i class="fa-solid fa-credit-card"></i>Checkout</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="about_us.html"
+              ><i class="fa-solid fa-circle-info"></i>About Us</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="contact.html" class="white-color"
+              ><i class="fa-solid fa-envelope"></i>Contact & FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-content">
+          <div class="page-banner-link">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Contact & FAQ</span>
+          </div>
+          <h1>Contact Us & FAQ</h1>
+          <p>
+            Get in touch with our tech experts, request order support, or browse
+            our frequently asked questions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Top Contact & Form Area -->
+      <div class="contact-grid">
+        <!-- Left Column: Contact Information -->
+        <div class="card info-card">
+          <div>
+            <h2>Contact Information</h2>
+            <p class="sub-desc">
+              Reach out to us for product information, orders, technical
+              questions, or any other assistance.
+            </p>
+
+            <div class="contact-items">
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </div>
+                <div class="item-text">
+                  <h4>Phone</h4>
+                  <a href="tel:+85512345678" class="main-text"
+                    >+855 12 345 678</a
+                  >
+                  <span class="sub-text">(Mon - Sat, 8:00 AM - 6:00 PM)</span>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div class="item-text">
+                  <h4>Email</h4>
+                  <a href="mailto:support@eshop.com" class="main-text"
+                    >support@eshop.com</a
+                  >
+                  <span class="sub-text">We reply within 24 hours</span>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+                    />
+                  </svg>
+                </div>
+                <div class="item-text">
+                  <h4>Our Location</h4>
+                  <span class="main-text">123 Tech Street, Phnom Penh,</span>
+                  <span class="sub-text">Cambodia</span>
+                </div>
+              </div>
+
+              <!-- Business Hours -->
+              <div class="contact-item">
+                <div class="icon-badge">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                    />
+                  </svg>
+                </div>
+                <div class="item-text">
+                  <h4>Business Hours</h4>
+                  <span class="main-text">Monday - Saturday</span>
+                  <span class="sub-text">8:00 AM - 6:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="follow-section">
+            <h4>Follow ESHOP</h4>
+            <div class="social-icons">
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.2 22 12z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Telegram">
+                <svg viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="card form-card">
+          <span class="pill-label">Send Us a Message</span>
+          <h2>How can we help you?</h2>
+          <p class="form-subtitle">
+            Fill out the form below and tell us what you need.
+          </p>
+
+          <form action="#" method="POST" onsubmit="event.preventDefault()">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="input-field"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="input-field"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <div class="select-wrapper">
+                <select id="subject" class="select-field" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="order">Order Tracking & Status</option>
+                  <option value="product">Product Inquiries</option>
+                  <option value="warranty">Warranty & Repairs</option>
+                  <option value="other">Other Assistance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Your Message *</label>
+              <textarea
+                id="message"
+                class="textarea-field"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+              Send Message
+            </button>
+
+            <div class="safe-text">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                />
+              </svg>
+              <span>Your information is safe with us.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom FAQ Area -->
+      <div class="faq-header">
+        <span class="pill-label">Quick Help</span>
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          Find answers to the most common questions about our products, orders,
+          and services.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <!-- FAQ 1 -->
+        <div class="faq-card">
+          <div class="faq-top">
+            <div class="faq-badge-wrap">
+              <span class="faq-badge">01</span>
+              <span class="faq-title">How can I track my order?</span>
+            </div>
+            <span class="faq-arrow"></span>
+          </div>
+          <p class="faq-desc">
+            You can track your order through your account or contact our support
+            team with your order number.
+          </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-card">
+          <div class="faq-top">
+            <div class="faq-badge-wrap">
+              <span class="faq-badge">02</span>
+              <span class="faq-title">Do products have a warranty?</span>
+            </div>
+            <span class="faq-arrow"></span>
+          </div>
+          <p class="faq-desc">
+            Yes, most products come with a manufacturer warranty. Please check
+            the product details for more information.
+          </p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-card">
+          <div class="faq-top">
+            <div class="faq-badge-wrap">
+              <span class="faq-badge">03</span>
+              <span class="faq-title">Can I get product advice?</span>
+            </div>
+            <span class="faq-arrow"></span>
+          </div>
+          <p class="faq-desc">
+            Of course! Our team is happy to help you choose the best product
+            based on your needs and budget.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-grid">
+          <div class="footer-brand">
+            <div>
+              <a href="index.html" class="brand-logo">
+                <div class="logo-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <span class="accent1">E<span class="accent">STORE</span></span>
+              </a>
+            </div>
+            <p>
+              Your premier online hub for smartphones, performance laptops,
+              enthusiast PC hardware, and audiophile gear.
+            </p>
+            <div class="footer-socail">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Category Pages</h4>
+            <ul>
+              <li><a href="smartphones.html">Smartphones (Apple, Samsung, Oppo, Vivo)</a></li>
+              <li><a href="laptops.html">Gaming & Office Laptops</a></li>
+              <li><a href="pc_hartware.html">PC Hardware Components</a></li>
+              <li><a href="audio.html">AirPods & Sound Gear</a></li>
+              <li><a href="smartwatch.html">Smartwatches & Wearables</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Store Navigation</h4>
+            <ul>
+              <li><a href="cart.html">View Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout & Order Flow</a></li>
+              <li><a href="about_us.html">About ESTORE</a></li>
+              <li><a href="contact.html">Contact Us & Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newletter">
+            <h4>Stay Ahead of Tech</h4>
+            <p>
+              Subscribe for exclusive drops, early bird coupons, and hardware
+              benchmarks.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            © 2026 ESTORE Tech Inc. All rights reserved. 10-Page Web Assignment
+            Project.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

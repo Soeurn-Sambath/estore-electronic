@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTORE</title>
+    <link rel="icon" href="images/estore.PNG">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .nav-link:nth-child(1) {
+        background-color: transparent;
+        color: #4f4a4a;
+      }
+      .nav-link:nth-child(8) {
+        background-color: var(--secondary);
+        color: white;
+      }
+      .nav-link .white-color1:nth-child(8) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span>E<span class="accent">STORE</span></span>
+          </a>
+          <!-- Search bar -->
+          <div class="search-wrapper">
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search iPhone, ROG Laptop, i9 CPU, OLED Monitor..."
+              />
+            </div>
+          </div>
+          <!-- Wishlist & Cart -->
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-text">Wishlist</span>
+              <span class="badge-count">2</span>
+            </button>
+            <a href="cart.html" class="action-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="action-text">Cart</span>
+              <span class="badge-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- List 10 pages -->
+    <nav class="header-nav-list">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="smartphones.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a>
+          </li>
+          <li class="nav-link">
+            <a href="pc_hartware.html"
+              ><i class="fa-solid fa-microchip"></i>PC Hartware</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="audio.html"
+              ><i class="fa-regular fa-headphones"></i>Audio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="smartwatch.html"
+              ><i class="fa-solid fa-stopwatch"></i>Smartwatches</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="checkout.html" class="white-color"
+              ><i class="fa-solid fa-credit-card"></i>Checkout</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="about_us.html"
+              ><i class="fa-solid fa-circle-info"></i>About Us</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i>Contact & FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-content">
+          <div class="page-banner-link">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="./cart.html">Cart</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="./checkout.html">Checkout</a>
+          </div>
+          <h2>Secure Checkout</h2>
+          <p>
+            Enter your shipping destination, choose your preferred payment
+            method, and complete your order.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout -->
+    <div class="container">
+      <div class="checkout-grid">
+        <fieldset class="checkout-table-cart">
+          <legend><h3>Shopping Information</h3></legend>
+          <table class="checkout-table">
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="first-name">
+                <label for="">First Name</label><br />
+                <input type="text" placeholder="Your name" />
+              </td>
+              <td class="last-name">
+                <label for="">Last Name</label><br />
+                <input type="text" placeholder="Your surname" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="email-address">
+                <label for="">Email Address</label><br />
+                <input type="text" placeholder="example@gmail.com" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="phone-number">
+                <label for="">Phone Number</label><br />
+                <input type="text" placeholder="+855" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="delivery-address">
+                <label for="">Delivery Address</label><br />
+                <input type="text" placeholder="Street,dictrict,city" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <div class="checkout-summary">
+          <table class="checkout-cart">
+            <tr>
+              <td><h2>Items in Your Order</h2></td>
+            </tr>
+            <tr>
+              <td>iPhone 15</td>
+              <td align="end">$1,100</td>
+            </tr>
+            <tr>
+              <td>ASUS ROG STRIX(RTX5090)</td>
+              <td align="end">$1,599</td>
+            </tr>
+            <tr>
+              <td>Subtotal</td>
+              <td align="end">$2,699</td>
+            </tr>
+            <tr>
+              <td>Express Delivery</td>
+              <td align="end"><font color="green">FREE</font></td>
+            </tr>
+            <tr>
+              <td>Warranty Protection</td>
+              <td align="end"><font color="green">INCLUDED</font></td>
+            </tr>
+            <tr>
+              <td><h2>Total Payable</h2></td>
+              <td align="end">
+                <h3><font color="dodgerblue">$1,488.00</font></h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="pay-method">
+        <i class="fa-solid fa-credit-card"></i>Payment Method
+      </div>
+      <div class="payment">
+        <div class="pay-cart">
+          <i class="fa-solid fa-credit-card"></i>
+          <p>Credit / Debit Cart</p>
+        </div>
+        <div class="pay-cart">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <p>Credit / Debit Cart</p>
+        </div>
+        <div class="pay-cart">
+          <i class="fa-solid fa-building-columns"></i>
+          <p>Credit / Debit Cart</p>
+        </div>
+      </div>
+    </div>
+   <footer class="footer">
+      <div class="container">
+        <div class="foot-grid">
+          <div class="footer-brand">
+            <div>
+              <a href="index.html" class="brand-logo">
+                <div class="logo-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <span class="accent1">E<span class="accent">STORE</span></span>
+              </a>
+            </div>
+            <p>
+              Your premier online hub for smartphones, performance laptops,
+              enthusiast PC hardware, and audiophile gear.
+            </p>
+            <div class="footer-socail">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Category Pages</h4>
+            <ul>
+              <li><a href="smartphones.html">Smartphones (Apple, Samsung, Oppo, Vivo)</a></li>
+              <li><a href="laptops.html">Gaming & Office Laptops</a></li>
+              <li><a href="pc_hartware.html">PC Hardware Components</a></li>
+              <li><a href="audio.html">AirPods & Sound Gear</a></li>
+              <li><a href="smartwatch.html">Smartwatches & Wearables</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Store Navigation</h4>
+            <ul>
+              <li><a href="cart.html">View Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout & Order Flow</a></li>
+              <li><a href="about_us.html">About ESTORE</a></li>
+              <li><a href="contact.html">Contact Us & Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newletter">
+            <h4>Stay Ahead of Tech</h4>
+            <p>
+              Subscribe for exclusive drops, early bird coupons, and hardware
+              benchmarks.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            © 2026 ESTORE Tech Inc. All rights reserved. 10-Page Web Assignment
+            Project.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

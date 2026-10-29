@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTORE</title>
+    <link rel="icon" href="images/estore.PNG">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .nav-link:nth-child(1) {
+        background-color: transparent;
+        color: #4f4a4a;
+      }
+      .nav-link:nth-child(6) {
+        background-color: var(--secondary);
+        color: white;
+      }
+      .nav-link .white-color1:nth-child(6) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span>E<span class="accent">STORE</span></span>
+          </a>
+          <!-- Search bar -->
+          <div class="search-wrapper">
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search iPhone, ROG Laptop, i9 CPU, OLED Monitor..."
+              />
+            </div>
+          </div>
+          <!-- Wishlist & Cart -->
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-text">Wishlist</span>
+              <span class="badge-count">2</span>
+            </button>
+            <a href="cart.html" class="action-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="action-text">Cart</span>
+              <span class="badge-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- List 10 pages -->
+    <nav class="header-nav-list">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="smartphones.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a>
+          </li>
+          <li class="nav-link">
+            <a href="pc_hartware.html"
+              ><i class="fa-solid fa-microchip"></i>PC Hartware</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="audio.html"
+              ><i class="fa-regular fa-headphones"></i>Audio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="smartwatch.html" class="white-color"
+              ><i class="fa-solid fa-stopwatch"></i>Smartwatches</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="checkout.html"
+              ><i class="fa-solid fa-credit-card"></i>Checkout</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="about_us.html"
+              ><i class="fa-solid fa-circle-info"></i>About Us</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i>Contact & FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-content">
+          <div class="page-banner-link">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Smartwatches</span>
+          </div>
+          <h2>Smartwatches & Wearable Tech</h2>
+          <p>
+            Titanium multisport GPS adventure watches, ECG heart rate monitors,
+            and smart wrist assistants from Apple, Samsung, and Garmin.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section header -->
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Precision Wearables</h2>
+          <p>
+            Filter by brand to compare health metrics, battery life, and
+            materials
+          </p>
+        </div>
+        <div class="sorting-group">
+          <label for="#"
+            ><i class="fa-solid fa-arrow-down-short-wide"></i>Sort By:</label
+          >
+          <select name="" id="" class="sort-select">
+            <option value="">Featured Picks</option>
+            <option value="">Price: Low to High</option>
+            <option value="">Price: High to Low</option>
+            <option value="">Top Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- subfilter bar -->
+    <div class="container">
+      <div class="subfilter">
+        <ul class="subfilter-list">
+          <li><i class="fa-solid fa-filter"></i>FULTERS:</li>
+          <li>All Smartwatches</li>
+          <li><a href="#">Apple Watch</a></li>
+          <li><a href="#">Samsung Galaxy Watch</a></li>
+          <li><a href="#">Garmin GPS Watch</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cart Category -->
+    <div class="card-category">
+      <div class="container">
+        <div class="product-grid">
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/applewatchultra2.avif" alt="" />
+              <span class="percent">-6%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Apple Watch Ultra 2</h3>
+              <p class="product-desc">
+                The ultimate sports and adventure watch with precision
+                dual-frequency GPS, 3000 nits display, and 36-hour battery life.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$489</h2>
+                  <p class="old-price">$499</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/watchos8bring.jpg" alt="" />
+              <span class="percent">-14%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Apple Watch Series 9 (GPS + Cell)</h3>
+              <p class="product-desc">
+                Smarter, brighter, and mightier with S9 SiP, magic double tap
+                gesture, and advanced health sensors (ECG, Blood Oxygen).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$429</h2>
+                  <p class="old-price">$520</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/galaxywatchultra.jpg" alt="" />
+              <span class="percent">-7%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Samsung Galaxy Watch Ultra</h3>
+              <p class="product-desc">
+                Cushion design with titanium grade 4 case, 10ATM water
+                resistance, dual-frequency GPS, and personalized AI Energy
+                Score.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$649</h2>
+                  <p class="old-price">$699</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/garmin-epix-pro.avif" alt="" />
+              <span class="percent">-10%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Garmin Epix Pro (Gen 2) Sapphire</h3>
+              <p class="product-desc">
+                Stunning AMOLED display smartwatch with built-in LED flashlight,
+                endurance score, and preloaded TopoActive maps.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$699</h2>
+                  <p class="old-price">$899</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-grid">
+          <div class="footer-brand">
+            <div>
+              <a href="index.html" class="brand-logo">
+                <div class="logo-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <span class="accent1">E<span class="accent">STORE</span></span>
+              </a>
+            </div>
+            <p>
+              Your premier online hub for smartphones, performance laptops,
+              enthusiast PC hardware, and audiophile gear.
+            </p>
+            <div class="footer-socail">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Category Pages</h4>
+            <ul>
+              <li><a href="smartphones.html">Smartphones (Apple, Samsung, Oppo, Vivo)</a></li>
+              <li><a href="laptops.html">Gaming & Office Laptops</a></li>
+              <li><a href="pc_hartware.html">PC Hardware Components</a></li>
+              <li><a href="audio.html">AirPods & Sound Gear</a></li>
+              <li><a href="smartwatch.html">Smartwatches & Wearables</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Store Navigation</h4>
+            <ul>
+              <li><a href="cart.html">View Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout & Order Flow</a></li>
+              <li><a href="about_us.html">About ESTORE</a></li>
+              <li><a href="contact.html">Contact Us & Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newletter">
+            <h4>Stay Ahead of Tech</h4>
+            <p>
+              Subscribe for exclusive drops, early bird coupons, and hardware
+              benchmarks.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            © 2026 ESTORE Tech Inc. All rights reserved. 10-Page Web Assignment
+            Project.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTORE</title>
+    <link rel="icon" href="images/estore.PNG">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .nav-link:nth-child(1) {
+        background-color: transparent;
+        color: #4f4a4a;
+      }
+      .nav-link:nth-child(3) {
+        background-color: var(--secondary);
+        color: white;
+      }
+      .nav-link .white-color1:nth-child(3) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span>E<span class="accent">STORE</span></span>
+          </a>
+          <!-- Search bar -->
+          <div class="search-wrapper">
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search iPhone, ROG Laptop, i9 CPU, OLED Monitor..."
+              />
+            </div>
+          </div>
+          <!-- Wishlist & Cart -->
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-text">Wishlist</span>
+              <span class="badge-count">2</span>
+            </button>
+            <a href="cart.html" class="action-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="action-text">Cart</span>
+              <span class="badge-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- List 10 pages -->
+    <nav class="header-nav-list">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="smartphones.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="laptops.html" class="white-color"
+              ><i class="fa-solid fa-laptop"></i>Laptops</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="pc_hartware.html"
+              ><i class="fa-solid fa-microchip"></i>PC Hartware</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="audio.html"
+              ><i class="fa-regular fa-headphones"></i>Audio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="smartwatch.html"><i class="fa-solid fa-stopwatch"></i>Smartwatches</a>
+          </li>
+          <li class="nav-link">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="checkout.html"
+              ><i class="fa-solid fa-credit-card"></i>Checkout</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="about_us.html"
+              ><i class="fa-solid fa-circle-info"></i>About Us</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i>Contact & FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-content">
+          <div class="page-banner-link">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Laptops</span>
+          </div>
+          <h2>Gaming & Office Laptops</h2>
+          <p>
+            From extreme RTX 4080 ray-tracing gaming rigs to featherweight
+            MacBook Pro and Dell XPS productivity ultrabooks.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section header -->
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>High-Performance Notebooks</h2>
+          <p>
+            Filter between dedicated Gaming powerhouses and slim Office
+            powerhouses
+          </p>
+        </div>
+        <div class="sorting-group">
+          <label for="#"
+            ><i class="fa-solid fa-arrow-down-short-wide"></i>Sort By:</label
+          >
+          <select name="" id="" class="sort-select">
+            <option value="">Featured Picks</option>
+            <option value="">Price: Low to High</option>
+            <option value="">Price: High to Low</option>
+            <option value="">Top Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- subfilter bar -->
+    <div class="container">
+      <div class="subfilter">
+        <ul class="subfilter-list">
+          <li><i class="fa-solid fa-filter"></i>FULTERS:</li>
+          <li>All Laptops</li>
+          <li><a href="#">Gaming Laptops</a></li>
+          <li><a href="#">Office & Ultrabooks</a></li>
+          <li><a href="#">Apple MacBook</a></li>
+          <li><a href="#">Asus ROG</a></li>
+          <li><a href="#">Lenovo Legion</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cart Category -->
+    <div class="card-category">
+      <div class="container">
+        <div class="product-grid">
+          <acticle class="card-product">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=700&q=80"
+                alt=""
+              />
+              <span class="percent">-16%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS ROG Strix SCAR 16</h3>
+              <p class="product-desc">
+                Dominates modern gaming with 14th Gen Intel Core i9, RTX 4080
+                GPU, and ROG Nebula HDR Mini LED display.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,499</h2>
+                  <p class="old-price">$2,699</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=700&q=80"
+                alt=""
+              />
+              <span class="percent">-16%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lenovo Legion Pro 7i Gen 9</h3>
+              <p class="product-desc">
+                Precision tuned by Lenovo AI Engine+ with Legion Coldfront 5.0
+                vapor chamber thermal system.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,199</h2>
+                  <p class="old-price">$2,399</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/Razer-Blade-16.webp" alt="" />
+              <span class="percent">-16%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Razer Blade 16</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,799</h2>
+                  <p class="old-price">$2,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-gaming-v16.webp" alt="" />
+              <span class="percent">-14%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUSGamingV16(RTX3050)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$848</h2>
+                  <p class="old-price">$2,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-rog-flowz13.webp" alt="" />
+              <span class="percent">-11%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUSROGFlowZ13</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,199</h2>
+                  <p class="old-price">$2,299</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-rog-g615jhr.webp" alt="" />
+              <span class="percent">-15%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS ROG G615JHR(RTX5050)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,199</h2>
+                  <p class="old-price">$2,499</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-rog-g615jmr.webp" alt="" />
+              <span class="percent">-16%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS ROG G615JMR(RTX5060)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,999</h2>
+                  <p class="old-price">$2,199</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-rog-rtx5080.webp" alt="" />
+              <span class="percent">-16%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS ROG G614PW(RTX5080)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,499</h2>
+                  <p class="old-price">$1,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-tuf-a15.webp" alt="" />
+              <span class="percent">-12%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS TUF A15(RTX3050)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,599</h2>
+                  <p class="old-price">$1,899</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-rog-strix.webp" alt="" />
+              <span class="percent">-8%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS ROG STRIX(RTX5090)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$2,499</h2>
+                  <p class="old-price">$2,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-tuf-f16.webp" alt="" />
+              <span class="percent">-14%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS TUF A15(RTX5050)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,199</h2>
+                  <p class="old-price">$1,399</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/msi-crosshair16.webp" alt="" />
+              <span class="percent">-19%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">MSI Crosshair 16HX</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,599</h2>
+                  <p class="old-price">$2,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/msi-crosshiair17.webp" alt="" />
+              <span class="percent">-20%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">MSI Crosshair 17HX</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,799</h2>
+                  <p class="old-price">$2,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/msi-cyborg15a.webp" alt="" />
+              <span class="percent">-10%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">MSI Cybog 15 A13CU</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,399</h2>
+                  <p class="old-price">$1,789</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/msi-cyborg15b.webp" alt="" />
+              <span class="percent">-20%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">MSI Cybog 15 B13W</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,499</h2>
+                  <p class="old-price">$1,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/msi-raider16.webp" alt="" />
+              <span class="percent">-13%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">MSI Raider 16 Max</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$1,679</h2>
+                  <p class="old-price">$1,859</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-vivobook-15.webp" alt="" />
+              <span class="percent">-8%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS Vivobook 15</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$540</h2>
+                  <p class="old-price">$1,200</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-vivobook-go14.webp" alt="" />
+              <span class="percent">-22%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS Vivobook Go 14</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$670</h2>
+                  <p class="old-price">$1,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-zephyrus-g16.webp" alt="" />
+              <span class="percent">-22%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS Zephyrus Go 16</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$570</h2>
+                  <p class="old-price">$1,999</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="./images/asus-vivobook14(core5).webp" alt="" />
+              <span class="percent">-23%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">ASUS Vivobook 14(core5)</h3>
+              <p class="product-desc">
+                CNC anodized aluminum unibody chassis paired with the world's
+                first dual-mode Mini-LED display (4K 120Hz / FHD+ 240Hz).
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$470</h2>
+                  <p class="old-price">$1,699</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-grid">
+          <div class="footer-brand">
+            <div>
+              <a href="index.html" class="brand-logo">
+                <div class="logo-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <span class="accent1">E<span class="accent">STORE</span></span>
+              </a>
+            </div>
+            <p>
+              Your premier online hub for smartphones, performance laptops,
+              enthusiast PC hardware, and audiophile gear.
+            </p>
+            <div class="footer-socail">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Category Pages</h4>
+            <ul>
+              <li><a href="smartphones.html">Smartphones (Apple, Samsung, Oppo, Vivo)</a></li>
+              <li><a href="laptops.html">Gaming & Office Laptops</a></li>
+              <li><a href="pc_hartware.html">PC Hardware Components</a></li>
+              <li><a href="audio.html">AirPods & Sound Gear</a></li>
+              <li><a href="smartwatch.html">Smartwatches & Wearables</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Store Navigation</h4>
+            <ul>
+              <li><a href="cart.html">View Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout & Order Flow</a></li>
+              <li><a href="about_us.html">About ESTORE</a></li>
+              <li><a href="contact.html">Contact Us & Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newletter">
+            <h4>Stay Ahead of Tech</h4>
+            <p>
+              Subscribe for exclusive drops, early bird coupons, and hardware
+              benchmarks.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            © 2026 ESTORE Tech Inc. All rights reserved. 10-Page Web Assignment
+            Project.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

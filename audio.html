@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTORE</title>
+    <link rel="icon" href="images/estore.PNG">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .nav-link:nth-child(1) {
+        background-color: transparent;
+        color: #4f4a4a;
+      }
+      .nav-link:nth-child(5) {
+        background-color: var(--secondary);
+        color: white;
+      }
+      .nav-link .white-color1:nth-child(5) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span>E<span class="accent">STORE</span></span>
+          </a>
+          <!-- Search bar -->
+          <div class="search-wrapper">
+            <div class="search-input-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search iPhone, ROG Laptop, i9 CPU, OLED Monitor..."
+              />
+            </div>
+          </div>
+          <!-- Wishlist & Cart -->
+          <div class="header-actions">
+            <button class="action-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-text">Wishlist</span>
+              <span class="badge-count">2</span>
+            </button>
+            <a href="cart.html" class="action-card">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="action-text">Cart</span>
+              <span class="badge-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- List 10 pages -->
+    <nav class="header-nav-list">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="smartphones.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Smartphones</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a>
+          </li>
+          <li class="nav-link">
+            <a href="pc_hartware.html"
+              ><i class="fa-solid fa-microchip"></i>PC Hartware</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="audio.html" class="white-color"
+              ><i class="fa-regular fa-headphones"></i>Audio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="smartwatch.html"
+              ><i class="fa-solid fa-stopwatch"></i>Smartwatches</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="checkout.html"
+              ><i class="fa-solid fa-credit-card"></i>Checkout</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="about_us.html"
+              ><i class="fa-solid fa-circle-info"></i>About Us</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="contact.html"
+              ><i class="fa-solid fa-envelope"></i>Contact & FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-content">
+          <div class="page-banner-link">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Audio</span>
+          </div>
+          <h2>Audio & Sound Equipment</h2>
+          <p>
+            Premium true wireless earbuds, studio-grade over-ear
+            noise-cancelling headphones, and punchy waterproof Bluetooth
+            speakers.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section header -->
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Audiophile Collection</h2>
+          <p>
+            Filter between Earbuds, Over-Ear Headphones, and Portable Speakers
+          </p>
+        </div>
+        <div class="sorting-group">
+          <label for="#"
+            ><i class="fa-solid fa-arrow-down-short-wide"></i>Sort By:</label
+          >
+          <select name="" id="" class="sort-select">
+            <option value="">Featured Picks</option>
+            <option value="">Price: Low to High</option>
+            <option value="">Price: High to Low</option>
+            <option value="">Top Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- subfilter bar -->
+    <div class="container">
+      <div class="subfilter">
+        <ul class="subfilter-list">
+          <li><i class="fa-solid fa-filter"></i>FULTERS:</li>
+          <li>All Audio</li>
+          <li><a href="#">Earbuds</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Apple</a></li>
+          <li><a href="#">Sony</a></li>
+          <li><a href="#">Bose</a></li>
+          <li><a href="#">JBL</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cart Category -->
+    <div class="card-category">
+      <div class="container">
+        <div class="product-grid">
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/aripodspro.webp" alt="" />
+              <span class="percent">-11%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Apple AirPods Pro 2 (USB-C)</h3>
+              <p class="product-desc">
+                Pro-level Active Noise Cancellation with Adaptive Audio,
+                Transparency mode, and USB-C MagSafe charging case.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$249</h2>
+                  <p class="old-price">$279</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/samsunggalaxybude3pro.jpg" alt="" />
+              <span class="percent">-12%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Samsung Galaxy Buds3 Pro</h3>
+              <p class="product-desc">
+                Blade design with Blade Lights, 24-bit Hi-Fi sound, adaptive
+                noise control, and real-time AI interpreter.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$219</h2>
+                  <p class="old-price">$249</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/sonywh-1000.webp" alt="" />
+              <span class="percent">-13%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Sony WH-1000XM5 Wireless ANC</h3>
+              <p class="product-desc">
+                Industry-leading noise cancellation powered by two processors
+                and eight microphones, with exceptional Hi-Res sound.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$349</h2>
+                  <p class="old-price">$399</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/basequiet.jpg" alt="" />
+              <span class="percent">-12%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Bose QuietComfort Ultra Headphones</h3>
+              <p class="product-desc">
+                Breakthrough spatialized audio with Bose Immersive Audio,
+                world-class noise cancellation, and CustomTune technology.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$379</h2>
+                  <p class="old-price">$329</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/JBL-Charge-5-Waterproof-1024x683.webp" alt="" />
+              <span class="percent">-17%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">JBL Charge 5 Portable Speaker</h3>
+              <p class="product-desc">
+                Breakthrough spatialized audio with Bose Immersive Audio,
+                world-class noise cancellation, and CustomTune technology.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$149</h2>
+                  <p class="old-price">$179</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+          <acticle class="card-product">
+            <div class="product-img">
+              <img src="images/stanmore_iii-front-desktop-1.jpeg" alt="" />
+              <span class="percent">-5%</span>
+              <span class="heart"><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                Marshall Stanmore III Bluetooth Speaker
+              </h3>
+              <p class="product-desc">
+                Re-engineered for a more immersive home audio experience,
+                featuring outward-angled tweeters and updated waveguides.
+              </p>
+              <div class="product-footer">
+                <div class="pricing">
+                  <h2 class="current-price">$379</h2>
+                  <p class="old-price">$399</p>
+                </div>
+                <button class="add-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>Add
+                </button>
+              </div>
+            </div>
+          </acticle>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-grid">
+          <div class="footer-brand">
+            <div>
+              <a href="index.html" class="brand-logo">
+                <div class="logo-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <span class="accent1">E<span class="accent">STORE</span></span>
+              </a>
+            </div>
+            <p>
+              Your premier online hub for smartphones, performance laptops,
+              enthusiast PC hardware, and audiophile gear.
+            </p>
+            <div class="footer-socail">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Category Pages</h4>
+            <ul>
+              <li><a href="smartphones.html">Smartphones (Apple, Samsung, Oppo, Vivo)</a></li>
+              <li><a href="laptops.html">Gaming & Office Laptops</a></li>
+              <li><a href="pc_hartware.html">PC Hardware Components</a></li>
+              <li><a href="audio.html">AirPods & Sound Gear</a></li>
+              <li><a href="smartwatch.html">Smartwatches & Wearables</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Store Navigation</h4>
+            <ul>
+              <li><a href="cart.html">View Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout & Order Flow</a></li>
+              <li><a href="about_us.html">About ESTORE</a></li>
+              <li><a href="contact.html">Contact Us & Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newletter">
+            <h4>Stay Ahead of Tech</h4>
+            <p>
+              Subscribe for exclusive drops, early bird coupons, and hardware
+              benchmarks.
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            © 2026 ESTORE Tech Inc. All rights reserved. 10-Page Web Assignment
+            Project.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
